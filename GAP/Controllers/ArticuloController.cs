@@ -7,12 +7,31 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using GAP.Models;
+using System.Collections;
 
 namespace GAP.Controllers
 {
     public class ArticuloController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
+
+        public IEnumerable _ArticulosConMenorStock()
+        {
+            var articuloModels = db.ArticuloModels.Include(d => d.DepositoModels).
+                OrderBy(x => (x.TotalEnBodega + x.TotalEnEstante)).Take(5);
+
+            return articuloModels;
+            //return View(articuloModels.ToList());
+        }
+
+        public IEnumerable _ArticulosConMayorStock()
+        {
+            var articuloModels = db.ArticuloModels.Include(d => d.DepositoModels).
+                OrderByDescending(x => (x.TotalEnBodega + x.TotalEnEstante)).Take(5);
+
+            return articuloModels;
+            //return View(articuloModels.ToList());
+        }
 
         // GET: Articulo
         public ActionResult Index()

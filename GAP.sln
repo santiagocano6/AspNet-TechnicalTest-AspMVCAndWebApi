@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GAP", "GAP\GAP.csproj", "{1AB6EF76-4053-46E2-90F2-CC34F5C4D9F5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceJson", "ServiceJson\ServiceJson.csproj", "{B6D6F37A-9828-4442-82DA-E08C7AE443C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Comunes", "Comunes\Comunes.csproj", "{CEE4C1A0-336D-43EF-8CCD-1CFBBE2451DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{1AB6EF76-4053-46E2-90F2-CC34F5C4D9F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1AB6EF76-4053-46E2-90F2-CC34F5C4D9F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1AB6EF76-4053-46E2-90F2-CC34F5C4D9F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6D6F37A-9828-4442-82DA-E08C7AE443C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6D6F37A-9828-4442-82DA-E08C7AE443C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6D6F37A-9828-4442-82DA-E08C7AE443C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6D6F37A-9828-4442-82DA-E08C7AE443C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEE4C1A0-336D-43EF-8CCD-1CFBBE2451DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEE4C1A0-336D-43EF-8CCD-1CFBBE2451DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEE4C1A0-336D-43EF-8CCD-1CFBBE2451DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEE4C1A0-336D-43EF-8CCD-1CFBBE2451DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
