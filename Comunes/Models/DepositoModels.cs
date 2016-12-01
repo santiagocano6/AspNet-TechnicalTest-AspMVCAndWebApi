@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace GAP.Models
+namespace Comunes.Models
 {
     [Table("stores")]
     public class DepositoModels

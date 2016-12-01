@@ -1,5 +1,4 @@
-﻿using System.Data.Entity;
-using System.Security.Claims;
+﻿using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
@@ -30,8 +29,8 @@ namespace GAP.Models
             return new ApplicationDbContext();
         }
 
-        public System.Data.Entity.DbSet<GAP.Models.ArticuloModels> ArticuloModels { get; set; }
+        public System.Data.Entity.DbSet<Comunes.Models.ArticuloModels> ArticuloModels { get; set; }
 
-        public System.Data.Entity.DbSet<GAP.Models.DepositoModels> DepositoModels { get; set; }
+        public System.Data.Entity.DbSet<Comunes.Models.DepositoModels> DepositoModels { get; set; }
     }
 }
