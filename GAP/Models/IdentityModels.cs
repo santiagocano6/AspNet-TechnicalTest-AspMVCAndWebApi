@@ -29,5 +29,9 @@ namespace GAP.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<GAP.Models.ArticuloModels> ArticuloModels { get; set; }
+
+        public System.Data.Entity.DbSet<GAP.Models.DepositoModels> DepositoModels { get; set; }
     }
 }
