@@ -1,13 +1,12 @@
 ﻿@model GAP.Models.DepositoModels
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Detalles depósito";
 }
 
-<h2>Details</h2>
+<h2>Detalles depósito</h2>
 
 <div>
-    <h4>DepositoModels</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -29,6 +28,6 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.DepositoId }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Edit", "Editar", new { id = Model.DepositoId }) |
+    @Html.ActionLink("Retornar a la lista", "Index")
 </p>

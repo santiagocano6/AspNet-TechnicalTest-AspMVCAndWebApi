@@ -35,7 +35,7 @@ namespace GAP.Models
         public double TotalEnEstante { get; set; }
 
         [Required]
-        [Display(Name = "Total en deposito")]
+        [Display(Name = "Total en depósito")]
         [Column("total_in_vault")]
         public double TotalEnBodega { get; set; }
 

@@ -1,18 +1,18 @@
 ﻿@model IEnumerable<GAP.Models.ArticuloModels>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Artículos";
 }
 
-<h2>Index</h2>
+<h2>Listado artículos</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Crear nuevo artículo", "Create")
 </p>
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.DepositoModels.Nombre)
+            Depósito
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Nombre)
@@ -53,9 +53,9 @@
             @Html.DisplayFor(modelItem => item.TotalEnBodega)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ArticuloId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ArticuloId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ArticuloId })
+            @Html.ActionLink("Editar", "Edit", new { id=item.ArticuloId }) |
+            @Html.ActionLink("Detalles", "Details", new { id=item.ArticuloId }) |
+            @Html.ActionLink("Eliminar", "Delete", new { id=item.ArticuloId })
         </td>
     </tr>
 }
