@@ -29,5 +29,7 @@ namespace ServiceJson.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<Comunes.Models.DepositoModels> DepositoModels { get; set; }
     }
 }
