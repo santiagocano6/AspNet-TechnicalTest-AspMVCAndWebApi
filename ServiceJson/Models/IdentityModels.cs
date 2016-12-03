@@ -23,6 +23,8 @@ namespace ServiceJson.Models
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
+            Configuration.ProxyCreationEnabled = false;
+            Configuration.LazyLoadingEnabled = false;
         }
         
         public static ApplicationDbContext Create()
@@ -31,5 +33,6 @@ namespace ServiceJson.Models
         }
 
         public System.Data.Entity.DbSet<Comunes.Models.DepositoModels> DepositoModels { get; set; }
+        public System.Data.Entity.DbSet<Comunes.Models.ArticuloModels> ArticuloModels { get; set; }
     }
 }
